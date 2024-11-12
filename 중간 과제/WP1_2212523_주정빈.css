@@ -1,0 +1,310 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+    font-family: "pretendard";
+    background-color: black;
+}
+nav {
+    display: flex;
+    position: fixed;
+    top:0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px 30px;
+    z-index: 100;
+}
+.home {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-weight: bold;
+}
+.item {
+    display: flex;
+    width: 130px;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+.main_image {
+    position: relative;
+    align-items: center;
+    margin-left: -7px;
+    margin-right: -7px;
+    top: 240px;
+    height: 100vh;
+    overflow: hidden;
+}
+.main_text {
+    display: flex;
+    position: absolute;
+    top: 225px;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    white-space: nowrap;
+    color: white;
+    font-size: 12rem;
+    font-weight: bold;
+    text-decoration: underline;
+    z-index: 1;
+}
+.about {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: left;
+    white-space: nowrap;
+    color: white;
+    margin: 200px 50px;
+}
+.artists, .works, .contact {
+    display: flex;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    color: white;
+    margin: 100px 50px;
+}
+.about_title {
+    position: relative;
+    top: 60px;
+    font-size: 8rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.about_body {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    top: 70px;
+    white-space: nowrap;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+.more_about {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: -170px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.home:hover, .item:hover, .more_about:hover, .more_artists:hover, .more_works:hover, .artists_card img:hover, .works_card1 img:hover, .works_card2 img:hover  {
+    opacity: 70%;
+}
+.artists_title {
+    white-space: nowrap;
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.artists_card {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.artists_card img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    animation: artists_img 8s linear infinite;
+}
+@keyframes artists_img {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.more_artists {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.works_title {
+    white-space: nowrap;
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.works_card1, .works_card2 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    object-fit: contain;
+}
+.works_card1 img{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    animation: works_img1 8s linear infinite;
+}
+.works_card2 img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    animation: works_img1 8s linear infinite reverse;
+}
+@keyframes works_img1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes works_img2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.more_works {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.contact_title {
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    margin-right: 30px;
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#name, #phone_num {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 70px;
+    left: 10px;
+    color: black;
+    border-radius: 7px;
+}
+#email {
+    margin-bottom: 5px;
+    top: 50px;
+    width: 810px;
+    height: 70px;
+    color: black;
+    border-radius: 7px;
+}
+#message {
+    margin-bottom: 5px;
+    top: 50px;
+    width: 810px;
+    height: 300px;
+    color: black;
+    border-radius: 7px;
+}
+#submit {
+    width: 810px;
+    height: 50px;
+    right: 0;
+    color: white;
+    background-color: transparent;
+    border-radius: 7px;
+}
+.works_upload {
+    margin-top: 50px;
+}
+.upload {
+    display: flex;
+    position: absolute;
+    padding: 40px;
+    top: 50px;
+    right: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    font-size: 16px;
+    font-weight:600;
+}
+.upload:hover {
+    opacity: 70%;
+}
+.works_gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.works_details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+}
+.works_details img {
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+.works_details img:hover {
+    transform: scale(1.05); 
+}
+.works_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.artists_name {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+.works_name {
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
