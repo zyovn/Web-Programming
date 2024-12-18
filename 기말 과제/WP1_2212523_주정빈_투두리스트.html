@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="WP1_2212523_주정빈_투두리스트.css">
+        <title>To-do List</title>
+    </head>
+    <body>
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="cal-button">
+                    <button id="prev">&lt;</button>
+                    <h2 id="now">month</h2>
+                    <button id="next">&gt;</button>
+                </div>
+                <table id="day">
+                    <thead>
+                        <tr>
+                            <th>SUN</th>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                        </tr>
+                    </thead>
+                    <tbody id="date">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="Todo-container">
+            <div class="To-do-list">
+                <h1>To-do List</h1>
+                <div class="add-container">
+                    <input type="text" id="input-todo">
+                    <button id="add-todo">+</button>
+                </div>
+                <div class="ongoing-task">
+                    <h2>🔥진행 중🔥</h2>
+                    <ul id="ongoing"></ul>
+                </div>
+                <div class="complete-task">
+                    <h2>👏진행 완료👏</h2>
+                    <ul id="complete"></ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="WP1_2212523_주정빈_투두리스트.js"></script>
+</html>
